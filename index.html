@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+      
+    </header>
+    <main class="presentacion">
+        
+        <section class="presentacion__seccion__logo">
+            <img src="img/Logo.png" alt="logo">
+        </section>
+        
+        <div class="presentacion__seccion__entrada">
+            <textarea class="presentacion__entrada__texto" id="textoAEncripar" rows="10" cols="50"> ingrese el texto aqui</textarea>
+            
+            
+            <section class="presentacion__seccion__notificaciones">
+                <img src="img/bi_exclamation-circle-fill.png" alt="signo de admiración">
+                <p class="presentacion__entrada__texto__restriccion"> Solo letras minúsculas y sin acentos</p>
+            </section>
+            <div class="presentacion__botones">
+                <button class="boton__encriptar" onclick="encriptarTexto();">Encriptar</button>
+                <button class="boton_desencriptar" onclick="desencriptarTexto();">Desencriptar</button>
+            </div>
+        </div>
+        
+        <div class="presentacion__seccion__salida">
+            <div class="presentacion__seccion__salida__inicio" id="inicio__decifrar" style="display: block;">
+                <img class="muneco" src="img/muneco.png" alt="muneco>">
+                <h2 class="presentacion__salida__texto">Ningún mensaje fue encontrado</h2>
+                <p class="presentacion__salida__texto__mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="presentacion__seccion__salida__cifrando" id="salida__decifrar" style="display: none;">
+                <p class="texto__cifrado__1" id="resultados"></p>
+                <button class="boton__copiar" onclick="copiarTexto();">Copiar</button>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+
+    </footer>
+   
+        
+</body>
